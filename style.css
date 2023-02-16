@@ -1,0 +1,87 @@
+*{
+   margin:0; 
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    font-size: 30px;
+}
+.container{
+    background-color: aqua;
+    padding: 10px;
+    margin-bottom: 10px;
+    min-height: 120px;
+    
+}
+.container div{
+    background-color: aliceblue;
+    border: 1px solid #999;
+
+}
+.container-one{
+    display: flex;
+}
+.container-two{
+    display: flex;
+   /* align-items: flex-start; */
+   /* align-items: center; */
+   align-items: flex-end;
+}
+.container-three{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    justify-content: center;
+}
+.container-four{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-five{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container-sijx{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.container-seven{
+    display: flex;
+}
+.container-seven div:nth-child(3) {
+    order: -1;
+}
+.container-eight{
+    display: flex;
+}
+.container-eight div{
+    flex-grow: 1;
+}
+.container-nine{
+    display: flex;
+}
+.container-nine div{
+    flex-grow: 1;
+}
+.container-nine div:nth-child(3){
+    flex-grow: 3;
+
+}
+.container-ten{
+    display: flex;
+}
+.container-ten div{
+    flex-grow: 1;
+}
+.container-ten div:nth-child(3){
+    flex-basis: 300px;
+}
+.container-eleven{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-eleven div{
+    padding: 35px;
+}
